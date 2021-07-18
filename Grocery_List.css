@@ -7,11 +7,13 @@ body {
 
 .container {
   background-color: rgb(66, 75, 245, 0.5);
+  border: 1px solid;
   border-radius: 20px;
   width: 850px;
   height: 800px;
   margin-right: auto;
   margin-left: auto;
+  overflow-y: scroll;
 }
 
 .items {
@@ -29,4 +31,14 @@ li {
   margin-bottom: 10px;
   font-size: 23px;
   font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightblue;
+  border: 1px solid;
+  border-radius: 10px;
 }
